@@ -1,5 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
 .App {
   text-align: center;
+}
+img {
+  width: 512px; /* or 200px, or any other value */
+  height: auto; /* to maintain aspect ratio */
 }
 
 .App-logo {
@@ -23,6 +28,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.hotels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .App-link {
   color: #61dafb;
