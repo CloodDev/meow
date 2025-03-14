@@ -67,7 +67,7 @@ function App() {
   };
 
   return (
-    <Container className="py-4">
+    <Container className="py-4 main">
       <Row className="mb-4 text-center">
         <Col>
           <h1 className="display-4">Biuro Podróży</h1>
@@ -75,14 +75,12 @@ function App() {
         </Col>
       </Row>
 
-      <Row>
-        <Col lg={8}>
+      <Row className='meow'>
           <div className="carousel">
             <Button onClick={prevImage}>{"<"}</Button>
-            <img src={images[currentImage]} alt={"image"} />
+            <img className="imageCity" src={images[currentImage]} alt={"image"} />
             <Button onClick={nextImage}>{">"}</Button>
           </div>
-        </Col>
 
         <Col lg={4}>
           <Card className="shadow-sm">
